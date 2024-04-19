@@ -17,14 +17,15 @@
         <% myAnimals.forEach(Animal =>){ %>
 
             <li>
-                <h3>Name: <%= Animal.commonName %></h3>
+                <h3>Common Name: <%= Animal.commonName %></h3>
                 <h4>Gender: <%= Animal.gender %></h4>
                 <h4>Age: <%= Animal.age %></h4>
                 <h4>Home Zoo: <%= Animal.homeZoo %></h4>
-                <form action="/deletePokemon/<%= pokemon._id %>"
+                <h4>Given Name: <%= Animal.givenName %></h4>
+                <form action="/deleteAnimal/<%= animal.givenName %>"
                 method ="POST">
-                    <input type="submit" value="Delete Pokemon"/>
-                    <input type="submit" value="Edit Pokemon" />
+                    <input type="submit" value="Delete Animal"/>
+                    <input type="submit" value="Edit Animal" />
                 </form>
             </li>
         

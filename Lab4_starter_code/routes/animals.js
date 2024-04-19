@@ -14,7 +14,7 @@ router.post("/enterAnimal", animalController.enterNewAnimal);
 router.get("/allAnimals", animalController.getAllAnimals);
 
 // route for deleting an animal from the DB
-router.post("/deleteAnimal/:commonName", animalController.deletePokemonByCName);
+router.post("/deleteAnimal/:commonName", animalController.deleteAnimalByCName);
 
 // routes for editing an animal in the DB
 router.get("/editAnimal", animalController.displayEditAnimal);
