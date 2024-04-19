@@ -74,9 +74,9 @@ async function editAnimal(req, res){
             isTransportable: formData.isTransportable, 
         })
     }catch (err){
-        console.log(`ERROR in editing pokemon ${formData.pokemonName}`)
+        console.log(`ERROR in editing animal ${formData.pokemonName}`)
     }
-    res.redirect("/displayPokemon.ejs");
+    res.redirect("main.ejs");
     
 }
 
