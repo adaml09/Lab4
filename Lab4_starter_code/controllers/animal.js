@@ -5,7 +5,7 @@ function displayHomePage(req, res){
     res.render("main.ejs")
 }
 
-async function enterAnimal(req, res){
+async function enterNewAnimal(req, res){
     const formData = req.body
 
     //create our new database pokemon
@@ -30,5 +30,5 @@ async function enterAnimal(req, res){
 
 module.exports = {
     displayHomePage,
-    enterAnimal,
+    enterNewAnimal,
 }
